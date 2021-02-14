@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ryo-i/react-hook-test/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/ryo-i/react-hook-test/static/js/main.99e12ecc.chunk.js",
+    "main.js.map": "/ryo-i/react-hook-test/static/js/main.99e12ecc.chunk.js.map",
+    "runtime-main.js": "/ryo-i/react-hook-test/static/js/runtime-main.e77b30bc.js",
+    "runtime-main.js.map": "/ryo-i/react-hook-test/static/js/runtime-main.e77b30bc.js.map",
+    "static/js/2.4d9a7e11.chunk.js": "/ryo-i/react-hook-test/static/js/2.4d9a7e11.chunk.js",
+    "static/js/2.4d9a7e11.chunk.js.map": "/ryo-i/react-hook-test/static/js/2.4d9a7e11.chunk.js.map",
+    "static/js/3.c3f5fe41.chunk.js": "/ryo-i/react-hook-test/static/js/3.c3f5fe41.chunk.js",
+    "static/js/3.c3f5fe41.chunk.js.map": "/ryo-i/react-hook-test/static/js/3.c3f5fe41.chunk.js.map",
+    "index.html": "/ryo-i/react-hook-test/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/ryo-i/react-hook-test/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.4d9a7e11.chunk.js.LICENSE.txt": "/ryo-i/react-hook-test/static/js/2.4d9a7e11.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ryo-i/react-hook-test/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e77b30bc.js",
+    "static/js/2.4d9a7e11.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.99e12ecc.chunk.js"
+  ]
+}
