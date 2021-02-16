@@ -2,7 +2,7 @@
 
 詳細（ブログ）
 
-※執筆中
+※参考：[https://www.i-ryo.com/entry/2021/02/17/065811:title]
 
 プレビュー（GitHub Pages）
 
