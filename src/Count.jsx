@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Context } from './Context'
+import { Context } from './App.js';
+
 
 function Count() {
   
