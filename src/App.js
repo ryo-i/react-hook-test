@@ -2,13 +2,11 @@ import React, { createContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Count from './Count';
+import dataJson from './data.json';
 
 export const Context = createContext();
 
-const data = {
-  name: '羊',
-  count: 0
-};
+const data = dataJson;
 
 function App() {
   return (
