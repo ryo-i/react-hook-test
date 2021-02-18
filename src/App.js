@@ -2,13 +2,39 @@ import React, { createContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Count from './Count';
-import dataJson from './data.json';
+// import dataJson from './data.json';
 
 export const Context = createContext();
 
-const data = dataJson;
+let data = {};
+console.log(data);
+
+const getData = () => {
+  fetch('http://localhost:3001/data/1/')
+      .then(res => res.json())
+      .then(
+        (result) => {
+          data = result;
+          console.log(data);
+        },
+        (error) => {
+          console.log(error);
+          const errData = {
+            name: '名無し',
+            count: 0
+          }
+          data = errData;
+        }
+      )
+};
+getData();
 
 function App() {
+  data = {
+    name: '山羊',
+    count: null
+  };
+  console.log(data);
   return (
     <div className="App">
       <header className="App-header">
