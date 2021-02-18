@@ -9,7 +9,7 @@ function Count() {
     const [count, setCount] = useState(context.count);
 
     useEffect(() => {
-        fetch('http://localhost:3001/data/1/')
+        fetch('https://my-json-server.typicode.com/ryo-i/react-hook-test/data/1')
             .then(res => res.json())
             .then(
                 (result) => {
