@@ -5,9 +5,29 @@ import { Context } from './App.js';
 function Count() {
   
     const context = useContext(Context);
-    const name = context.name;
-
+    const [name, setName] = useState(context.name);
     const [count, setCount] = useState(context.count);
+
+    useEffect(() => {
+        fetch('http://localhost:3001/data/1/')
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    console.log(result);
+                    setName(result.name);
+                    setCount(result.count);
+                },
+                (error) => {
+                    console.log(error);
+                    const errData = {
+                        name: '名無し',
+                        count: 0
+                    }
+                    setName(errData.name);
+                    setCount(errData.count);
+                }
+            );
+    }, []);
 
     useEffect(() => {
         document.title = `React Hooks事始め - ${name}が ${count} 匹`;

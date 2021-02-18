@@ -9,7 +9,7 @@ export const Context = createContext();
 let data = {};
 console.log(data);
 
-const getData = () => {
+/* const getData = () => {
   fetch('http://localhost:3001/data/1/')
       .then(res => res.json())
       .then(
@@ -27,7 +27,7 @@ const getData = () => {
         }
       )
 };
-getData();
+getData(); */
 
 function App() {
   data = {
@@ -54,7 +54,6 @@ function App() {
           <Count />
         </Context.Provider>
       </header>
-
     </div>
   );
 }
