@@ -1,6 +1,21 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Context } from './App.js';
+import firebase from "firebase/app";
+import 'firebase/database';
 
+// Config
+const config = {
+    apiKey: "AIzaSyBju9iq3ug6gJMqyVsoGX_YByHt6L3Dh0c",
+    authDomain: "kumokotsu-test.firebaseapp.com",
+    databaseURL: "https://kumokotsu-test-default-rtdb.firebaseio.com",
+    storageBucket: "kumokotsu-test.appspot.com"
+};
+firebase.initializeApp(config);
+
+// DB
+const db = firebase.database();
+
+console.log(db);
 
 function Count() {
   
@@ -9,7 +24,8 @@ function Count() {
     const [count, setCount] = useState(context.count);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/ryo-i/react-hook-test/data/1')
+        // fetch('https://my-json-server.typicode.com/ryo-i/react-hook-test/data/1') // json-server
+        fetch('https://kumokotsu-test-default-rtdb.firebaseio.com/counter.json') // realtime database
             .then(res => res.json())
             .then(
                 (result) => {
